@@ -24,4 +24,10 @@ public class StudentServiceImple implements StudentService  {
     
 
     }
+
+    public Student getStudentById(Long id){
+        return studentRepository.findById(id){
+            .orElseThrow(()-> new )
+        }
+    }
 }
