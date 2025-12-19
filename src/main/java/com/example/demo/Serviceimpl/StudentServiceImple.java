@@ -27,7 +27,11 @@ public class StudentServiceImple implements StudentService  {
 
     public Student getStudentById(Long id){
         return studentRepository.findById(id){
-            .orElseThrow(()-> new )
+            .orElseThrow(()-> new ResourceNotFoundException(message:"Student not found"));
+        }
+        public Student updatedata(Long id,Student student){
+            Student exits=getStudentById(id);
+            exits.setName(student.get)
         }
     }
 }
