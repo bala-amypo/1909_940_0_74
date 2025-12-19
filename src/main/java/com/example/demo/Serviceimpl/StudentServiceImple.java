@@ -31,7 +31,8 @@ public class StudentServiceImple implements StudentService  {
         }
         public Student updatedata(Long id,Student student){
             Student exits=getStudentById(id);
-            exits.setName(student.get)
+            exits.setName(student.getName());
+            exits
         }
     }
 }
